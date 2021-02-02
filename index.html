@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>AntioquiaQuiz</title>
+</head>
+<body>
+    <div id="container">
+        <header>
+            <h1>Quiz departamento de Antioquia</h1>
+            <p>Responde las siguientes pregutas</p>
+        </header>
+        <section>
+            <div id="resultado"></div>
+                <!-- formulario con name para acceder a el directamente, con un onsubmit que retorna la funcion 
+                a donde se van a enviar las respuestas para verificarlas cuando den click en enviar -->
+
+                <form name="quizForm" onsubmit="return verificarRespuestas()">
+
+                    <!-- Cada pregunta esta en un h3  -->
+                    <h3>1. Cuantos municipios conforman el departamento de Antioquia?</h3>
+                    <!-- Cada opcion esta dentro de un input  -->
+                    <input type="radio" name="p1" value="a">a. 125 <br/>
+                    <input type="radio" name="p1" value="b">b. 124 <br/>
+                    <input type="radio" name="p1" value="c">c. 122 <br/>
+                    <input type="radio" name="p1" value="d">d. Ninguno de los anteriores <br/>
+    
+                    <h3>2. Cuantas subregiones conforman el departamento?</h3>
+                    <!-- Todas las opciones deben tener el mismo name y cambian dependiendo del numero de pregunta-->
+                    <input type="radio" name="p2" value="a">a. 8 <br/>
+                    <input type="radio" name="p2" value="b">b. 9 <br/>
+                    <input type="radio" name="p2" value="c">c. 10 <br/>
+                    <input type="radio" name="p2" value="d">d. Mas de 10<br/>
+                    
+                    <h3>3. Cuales de estos platos tipicos pertenecen al departamnto?</h3>
+                    <input type="radio" name="p3" value="a">a. Papas sabaneras y el cuchuco <br/>
+                    <input type="radio" name="p3" value="b">b. Arroz de coco y  casabe <br/>
+                    <input type="radio" name="p3" value="c">c. Sancocho de res y mondongo <br/>
+                    <input type="radio" name="p3" value="d">d. Tilapia y el ajiaco <br/>
+    
+                    <h3>4. En que region está ubicado el departamento</h3>
+                    <input type="radio" name="p4" value="a">a. Región Andina <br/>
+                    <input type="radio" name="p4" value="b">b. Región Pacifica <br/>
+                    <input type="radio" name="p4" value="c">c. Región Caribe <br/>
+                    <input type="radio" name="p4" value="d">d. Región Insular <br/>
+                    
+                    <h3>5. En que meses del año se disfruta un mejor clima en Medellin?</h3>
+                    <input type="radio" name="p5" value="a">a. Febrero - Mayo <br/>
+                    <input type="radio" name="p5" value="b">b. Julio - Noviembre <br/>
+                    <input type="radio" name="p5" value="c">c. Enero - Abril <br/>
+                    <input type="radio" name="p5" value="d">d. Diciembre - Marzo <br/>
+                    
+                    <h3>6. Cual de estos municipios no pertenece a la subregión del Valle de Aburrá?</h3>
+                    <input type="radio" name="p6" value="a">a. Bello - Caldas <br/>
+                    <input type="radio" name="p6" value="b">b. Envigado - Girardota <br/>
+                    <input type="radio" name="p6" value="c">c. Itagui - Sabaneta <br/>
+                    <input type="radio" name="p6" value="d">d. San Antonio de Prado - Guarne <br/>
+                </br>
+                    <!-- Boton con el que se envian a verificar las respuestas -->
+                    <input type="submit" value="Enviar">
+                 </form>   
+        </section>
+    </div>
+    <!-- Link al archivo js para implementar js al proyecto -->
+    <script src="./script.js"></script>
+</body>
+</html>
